@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SempCloud - Download</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .ddos-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .ddos-container h1 {
+            font-size: 3rem;
+            color: #00f7ff;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        .ddos-container p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .ddos-container .loading-bar {
+            width: 50%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .ddos-container .loading-bar .progress {
+            width: 0;
+            height: 100%;
+            background: #00f7ff;
+            animation: load 3s forwards;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+            }
+            100% {
+                text-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+            }
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .download-page {
+            display: none;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .download-box {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .download-box h1 {
+            font-size: 2.5rem;
+            color: #00f7ff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .download-box p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .download-box .file-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .download-box .file-details span {
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 5px 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #00f7ff;
+            color: #121212;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-button:hover {
+            background: #ff0040;
+            transform: translateY(-3px);
+        }
+
+        .branding {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .post-details {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .post-details .username {
+            color: #00f7ff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .post-details .date {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ddos-container">
+        <h1>Protected by SempShield</h1>
+        <p>DDoS mitigation activated. Verifying your browser...</p>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <div class="download-page hidden" id="downloadPage">
+        <div class="download-box">
+            <h1>drive.semp.cloud</h1>
+            <div class="file-details">
+                <span><strong>File Name:</strong> nigga.pdf</span>
+                <span><strong>File Type:</strong> PDF</span>
+                <span><strong>Size:</strong> 496 KB</span>
+                <span><strong>Last Modified:</strong> 12/24/2024 21:23 GMT +3</span>
+                <span><strong>Description:</strong> proje</span>
+            </div>
+            <p>Your secure download is ready. Click the button below to download your file.</p>
+            <a href="/nigga.pdf" class="download-button" download>Download Now</a>
+            <div class="post-details">
+                <span class="username">Posted by: sempiller (admin)</span>
+                <span class="date">On Date: 12/24/2024 21:23 GMT +3</span>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ddosContainer = document.querySelector('.ddos-container');
+            const downloadPage = document.querySelector('#downloadPage');
+
+            if (ddosContainer && downloadPage) {
+                setTimeout(() => {
+                    ddosContainer.style.display = 'none';
+                    downloadPage.style.display = 'block';
+                }, 3000);
+            } else {
+                console.error('Required elements not found in the DOM.');
+            }
+        });
+    </script>
+</body>
+</html>
